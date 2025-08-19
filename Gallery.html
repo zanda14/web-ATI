@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url('vector.jpeg') no-repeat center center/cover;
+        color: white;
+    }
+    /* Header */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        background: #f2f2f2;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+        height: 50px;
+    }
+    .nav-menu  
+       .nav-menu {
+        display: flex;
+        gap: 25px;
+    }
+    .nav-menu a {
+        text-decoration: none;
+        color:#007BFF;
+        font-weight: 500;
+        font-size: 1em;
+        transition: color 0.3s ease;
+    }
+    .nav-menu a:hover {
+        color: #007BFF;
+    }
+    /* Bagian kanan: nomor telepon lebih besar */
+.home .frame-3,
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: vector;
+    padding: 12px 18px; /* padding lebih besar */
+    border-radius: 10px;
+    color: #333;             /* override dari body yang putih */
+    font-weight: 700;
+    border: 1px solid rgba(30, 20, 20, 0.5);
+    box-shadow: 0 2px 5px rgba(0,0,0,.08);
+    white-space: nowrap;
+  }
+    /* Gallery Title */
+    h1 {
+        text-align: center;
+        margin-top: 100px;
+        font-size: 2.5em;
+    }
+    /* Gallery Grid */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 900px;
+        margin: 40px auto;
+    }
+    .gallery-item {
+        text-align: center;
+    }
+    .gallery-item img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+    .gallery-item p {
+        margin-top: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <img src="logo_ati-removebg-preview.png" alt="Logo" class="logo">
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="phone">+62-822-8836-6600</div>
+    </div>
+
+    <!-- Title -->
+    <h1>Gallery</h1>
+
+    <!-- Gallery Grid -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="test.jpeg" alt="Family Gathering">
+            <p>Family Gathering</p>
+        </div>
+        <div class="gallery-item">
+            <img src="test.jpeg" alt="Buka Bersama">
+            <p>Buka Bersama</p>
+        </div>
+        <div class="gallery-item">
+            <img src="test.jpeg" alt="Idul Adha">
+            <p>Idul Adha</p>
+        </div>
+        <div class="gallery-item">
+            <img src="test.jpeg" alt="Idul Fitri">
+            <p>Idul Fitri</p>
+        </div>
+    </div>
+
+</body>
+</html>
